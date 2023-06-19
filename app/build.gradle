@@ -37,4 +37,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation project(':matrix-trace-canary')
     implementation project(':matrix-android-commons')
+    implementation project(':matrix-backtrace')
 }

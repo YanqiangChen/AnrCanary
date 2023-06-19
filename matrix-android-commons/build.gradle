@@ -14,8 +14,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
         externalNativeBuild {
+//            cmake {
+//                targets "xhook"
+//                cppFlags ""
+//            }
             cmake {
-                targets "xhook"
+                targets "semi_dlfcn"
                 cppFlags ""
             }
 
@@ -31,6 +35,7 @@ android {
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
+            version "3.10.2"
         }
     }
     compileOptions {
