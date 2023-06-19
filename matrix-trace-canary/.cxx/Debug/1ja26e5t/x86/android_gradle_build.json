@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "matrix_trace_canary-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/x86",
+        "matrix_trace_canary"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "matrix_trace_canary",
+      "output": "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/build/intermediates/cxx/Debug/1ja26e5t/obj/x86/libmatrix_trace_canary.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2i3w3x6x/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2i3w3x6x/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "matrix_android_commons-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2i3w3x6x/x86",
+        "matrix_android_commons"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "matrix_android_commons",
+      "output": "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/build/intermediates/cxx/Debug/2i3w3x6x/obj/x86/libmatrix_android_commons.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

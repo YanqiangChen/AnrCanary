@@ -1,0 +1,17 @@
+# ninja log v5
+0	11	0	clean	2b3bf3ade4361767
+0	91	1687099962	src/main/cpp/libsemi_dlfcn/CMakeFiles/semi_dlfcn.dir/sd_log.c.o	5891460c34f91c12
+1	93	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xh_log.c.o	4f19573b3906511b
+2	108	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xh_version.c.o	1458f9086e6ccf09
+2	108	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xhook.c.o	4fedbd31a831a626
+1	111	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xh_jni.c.o	23f48409ae783f8e
+1	129	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xh_util.c.o	4a711dfc64a18dcb
+2	133	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xh_maps.c.o	5544607bb06c4ad1
+1	147	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xh_elf.c.o	d980cc6785e03e78
+0	157	1687099962	src/main/cpp/libsemi_dlfcn/CMakeFiles/semi_dlfcn.dir/semi_dlfcn.c.o	8a37e3c768ddc43f
+1	171	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xh_core.c.o	6f25733f4042e1fe
+92	177	1687099962	src/main/cpp/libxhook/CMakeFiles/xhook.dir/xhook_ext.c.o	406c910aa61d761b
+93	381	1687099963	src/main/cpp/CMakeFiles/matrix_android_commons.dir/matrix_android_commons.cpp.o	a3c38b1366abff70
+381	449	1687099963	../../../../build/intermediates/cxx/Debug/2o2xu72e/obj/x86/libmatrix_android_commons.so	7a2a56b383f97321
+157	593	1687099963	src/main/cpp/libsemi_dlfcn/libsemi_dlfcn.a	36f7e5ff3e22a29a
+593	631	1687099963	../../../../build/intermediates/cxx/Debug/2o2xu72e/obj/x86/libxhook.so	abf0839555be8577

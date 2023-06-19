@@ -1,0 +1,3 @@
+ninja: Entering directory `/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/armeabi-v7a'
+[1/2] Building CXX object src/main/cpp/CMakeFiles/matrix_android_commons.dir/matrix_android_commons.cpp.o
+[2/2] Linking CXX shared library ../../../../build/intermediates/cxx/Debug/2o2xu72e/obj/armeabi-v7a/libmatrix_android_commons.so

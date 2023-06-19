@@ -1,0 +1,83 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/CMakeLists.txt",
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/src/main/cpp/CMakeLists.txt",
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/src/main/cpp/libxhook/CMakeLists.txt",
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/src/main/cpp/libsemi_dlfcn/CMakeLists.txt",
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/src/main/cpp/libenhance_dlsym/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "xhook-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86",
+        "xhook"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "xhook",
+      "output": "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/build/intermediates/cxx/Debug/2o2xu72e/obj/x86/libxhook.so",
+      "runtimeFiles": []
+    },
+    "semi_dlfcn-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86",
+        "semi_dlfcn"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "semi_dlfcn",
+      "output": "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86/src/main/cpp/libsemi_dlfcn/libsemi_dlfcn.a"
+    },
+    "matrix_android_commons-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86",
+        "matrix_android_commons"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "matrix_android_commons",
+      "output": "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/build/intermediates/cxx/Debug/2o2xu72e/obj/x86/libmatrix_android_commons.so",
+      "runtimeFiles": []
+    },
+    "enhance_dlsym-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86",
+        "enhance_dlsym"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "enhance_dlsym",
+      "output": "/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-android-commons/.cxx/Debug/2o2xu72e/x86/src/main/cpp/libenhance_dlsym/libenhance_dlsym.a"
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

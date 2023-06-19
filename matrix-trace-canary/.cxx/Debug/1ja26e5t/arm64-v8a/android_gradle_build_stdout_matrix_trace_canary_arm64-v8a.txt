@@ -1,0 +1,3 @@
+ninja: Entering directory `/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/arm64-v8a'
+[1/2] Building CXX object CMakeFiles/matrix_trace_canary.dir/matrix_trace_canary.cpp.o
+[2/2] Linking CXX shared library /Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/build/intermediates/cxx/Debug/1ja26e5t/obj/arm64-v8a/libmatrix_trace_canary.so
