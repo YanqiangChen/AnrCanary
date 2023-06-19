@@ -18,7 +18,7 @@ add_library( # Sets the name of the library.
         matrix_android_commons
 
         # Sets the library as a shared library.
-        SHARED
+        STATIC
 
         # Provides a relative path to your source file(s).
         matrix_android_commons.cpp)

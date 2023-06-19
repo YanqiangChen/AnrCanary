@@ -15,8 +15,10 @@ android {
         consumerProguardFiles "consumer-rules.pro"
         externalNativeBuild {
             cmake {
+                targets "xhook"
                 cppFlags ""
             }
+
         }
     }
 

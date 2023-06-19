@@ -16,7 +16,7 @@ set(
   ${xhook_source_dir}/xhook_ext.c
 )
 
-add_library(xhook SHARED ${xhook_source})
+add_library(xhook STATIC ${xhook_source})
 
 find_library(log-lib log)
 

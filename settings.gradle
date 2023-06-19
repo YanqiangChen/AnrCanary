@@ -10,3 +10,4 @@ rootProject.name = "AnrCanary"
 include ':app'
 include ':matrix-trace-canary'
 include ':matrix-android-commons'
+include ':matrix-backtrace'
