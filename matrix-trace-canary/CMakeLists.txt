@@ -41,6 +41,7 @@ find_library( log-lib
 
 
 target_link_libraries( trace-canary
+        log-lib
         libsemi_dlfcn
         libxhook
         libwechatbacktrace
