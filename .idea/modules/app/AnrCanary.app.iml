@@ -104,7 +104,5 @@
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.4@aar" level="project" />
     <orderEntry type="module" module-name="AnrCanary.matrix-trace-canary" />
-    <orderEntry type="module" module-name="AnrCanary.matrix-android-commons" />
-    <orderEntry type="module" module-name="AnrCanary.matrix-backtrace" />
   </component>
 </module>
