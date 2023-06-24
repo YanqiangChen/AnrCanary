@@ -37,6 +37,7 @@ import com.tencent.matrix.trace.TracePlugin;
 import com.tencent.matrix.trace.config.SharePluginInfo;
 import com.tencent.matrix.trace.config.TraceConfig;
 import com.tencent.matrix.trace.constants.Constants;
+import com.tencent.matrix.trace.core.LooperMonitor;
 import com.tencent.matrix.trace.util.AppForegroundUtil;
 import com.tencent.matrix.trace.util.Utils;
 import com.tencent.matrix.util.DeviceUtil;
@@ -51,11 +52,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Queue;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
@@ -88,6 +91,9 @@ public class SignalAnrTracer extends Tracer {
     private static long lastReportedTimeStamp = 0;
     private static long onAnrDumpedTimeStamp = 0;
 
+    public static Queue<LooperMonitor.M> queue = null;
+    public static List<LooperMonitor.BlockMessage> blockMessages = null;
+    public static List<String> longStrs = new ArrayList<>();
     static {
         System.loadLibrary("trace-canary");
     }
@@ -337,6 +343,9 @@ public class SignalAnrTracer extends Tracer {
     private static void confirmRealAnr(final boolean isSigQuit) {
         MatrixLog.i(TAG, "confirmRealAnr, isSigQuit = " + isSigQuit);
         boolean needReport = isMainThreadBlocked();
+        queue = LooperMonitor.getMainMonitor().getHistoryMQ();
+        blockMessages = getBlockMessage();
+        checkErrorState();
         if (needReport) {
             report(false, isSigQuit);
         } else {
@@ -456,6 +465,9 @@ public class SignalAnrTracer extends Tracer {
             }
             jsonObject.put(SharePluginInfo.ISSUE_SCENE, scene);
             jsonObject.put(SharePluginInfo.ISSUE_PROCESS_FOREGROUND, currentForeground);
+            jsonObject.put("queue",queue);
+            jsonObject.put("blockMessages",blockMessages);
+            jsonObject.put("longStrs",longStrs);
 
             Issue issue = new Issue();
             issue.setTag(SharePluginInfo.TAG_PLUGIN_EVIL_METHOD);
@@ -501,6 +513,38 @@ public class SignalAnrTracer extends Tracer {
         return false;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    public static List<LooperMonitor.BlockMessage> getBlockMessage(){
+        try {
+            List<LooperMonitor.BlockMessage> list = new ArrayList<>();
+            MessageQueue mainQueue = Looper.getMainLooper().getQueue();
+            Field field = mainQueue.getClass().getDeclaredField("mMessages");
+            field.setAccessible(true);
+            Message mMessage = (Message) field.get(mainQueue);
+            if(mMessage!=null){
+                Field next = mMessage.getClass().getDeclaredField("next");
+                next.setAccessible(true);
+                Message nextMessage = mMessage;
+
+                while (nextMessage != null){
+                    long when = nextMessage.getWhen();
+                    long blockTime = when - SystemClock.uptimeMillis();
+                    LooperMonitor.BlockMessage blockMessage = new LooperMonitor.BlockMessage(blockTime,nextMessage.toString());
+                    list.add(blockMessage);
+                    nextMessage = (Message)next.get(nextMessage);
+
+                }
+
+            }
+            return list;
+
+        }catch (Exception e){
+            return null;
+        }
+
+
+    }
+
 
     private static void checkErrorStateCycle(boolean isSigQuit) {
         int checkErrorStateCount = 0;
@@ -535,7 +579,9 @@ public class SignalAnrTracer extends Tracer {
                 return false;
             }
 
+            longStrs.clear();
             for (ActivityManager.ProcessErrorStateInfo proc : procs) {
+                longStrs.add(proc.longMsg);
                 MatrixLog.i(TAG, "[checkErrorState] found Error State proccessName = %s, proc.condition = %d", proc.processName, proc.condition);
 
                 if (proc.uid != android.os.Process.myUid()

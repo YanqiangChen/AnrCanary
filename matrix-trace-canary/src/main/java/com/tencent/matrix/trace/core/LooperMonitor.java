@@ -55,6 +55,7 @@ public class LooperMonitor implements MessageQueue.IdleHandler {
     private final Queue<M> recentMsgQ = new ConcurrentLinkedQueue<>();
 
     private long messageStartTime = 0;
+    private long messageEndTime = 0;
     private String latestMsgLog = "";
     private long recentMCount = 0;
     private long recentMDuration = 0;
@@ -342,11 +343,31 @@ public class LooperMonitor implements MessageQueue.IdleHandler {
         }
     }
 
+    long totalTime = 0;
+    int count = 0;
     private void recordMsg(final String log, final long duration) {
+
         historyMsgHandler.post(new Runnable() {
             @Override
             public void run() {
-                enqueueHistoryMQ(new M(log, duration));
+                totalTime+=duration;
+                count++;
+                if(log.contains("android.app.ActivityThread$H")){
+                    enqueueHistoryMQ(new M(log, totalTime-duration,count--));
+                    enqueueHistoryMQ(new M(log, duration,1));
+                    count=0;
+                    totalTime=0;
+                }else if(totalTime >= 300){
+                    if(totalTime>900){   //加上最后一次，明显大于300
+                        enqueueHistoryMQ(new M(log, totalTime-duration,count--));
+                        enqueueHistoryMQ(new M(log, duration,1));
+                    }else{
+                        enqueueHistoryMQ(new M(log, totalTime,count));
+                    }
+                    count=0;
+                    totalTime=0;
+                }
+
             }
         });
 
@@ -403,6 +424,9 @@ public class LooperMonitor implements MessageQueue.IdleHandler {
         if (isBegin) {
             if (historyMsgRecorder) {
                 messageStartTime = System.currentTimeMillis();
+                if(messageEndTime-messageEndTime > 0){
+                    recordMsg("IDLE", messageEndTime-messageEndTime);  //IDLE
+                }
                 latestMsgLog = log;
                 recentMCount++;
             }
@@ -422,6 +446,7 @@ public class LooperMonitor implements MessageQueue.IdleHandler {
             }
         } else {
             if (historyMsgRecorder) {
+                messageEndTime = System.currentTimeMillis();   //记录上次消息结束的时间
                 recordMsg(log, System.currentTimeMillis() - messageStartTime);
             }
             synchronized (oldListeners) {
@@ -441,14 +466,33 @@ public class LooperMonitor implements MessageQueue.IdleHandler {
         }
     }
 
+    public static class BlockMessage{
+        public long blockTime = 0;
+        public String target = "";
+
+        public BlockMessage(long blockTime, String target) {
+
+            this.blockTime = blockTime;
+            this.target = target;
+        }
+
+    }
     public static class M {
         public String l;
         public long d;
+        public int count;  //消息的数量
 
         M(String l, long d) {
             this.l = l;
             this.d = d;
         }
+
+        M(String l, long d, int count) {
+            this.l = l;
+            this.d = d;
+            this.count = count;
+        }
+
 
         @Override
         public String toString() {
