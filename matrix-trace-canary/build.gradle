@@ -1,21 +1,44 @@
-plugins {
-    id 'com.android.library'
-}
+apply plugin: 'com.android.library'
+
+apply from: rootProject.file('gradle/WeChatNativeDepend.gradle')
 
 android {
-    compileSdk 33
-
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+//    publishNonDefault true
     defaultConfig {
-        minSdk 29
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
         externalNativeBuild {
             cmake {
-                abiFilters "armeabi-v7a"
+                cppFlags "-std=gnu++11 -frtti -fexceptions"
+            }
+            ndk {
+                abiFilters "armeabi-v7a", "arm64-v8a"
+            }
+        }
+
+    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            consumerProguardFiles 'proguard-rules.pro'
+//        }
+//    }
+//
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+//
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java {
+                srcDir "src/main/java"
             }
         }
     }
@@ -23,45 +46,41 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
         }
     }
+
     externalNativeBuild {
         cmake {
-            path "src/main/cpp/CMakeLists.txt"
-            version "3.10.2"
+            path "CMakeLists.txt"
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.4.0'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.annotation:annotation:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    api project(':matrix-android-lib')
+    implementation project(':matrix-android-commons')
+    implementation project(':matrix-backtrace')
 }
 
-def getNativeDependencyRoot() {
-    return new File(project.buildDir, "intermediates/native_deps")
-}
+version = rootProject.ext.VERSION_NAME
+group = rootProject.ext.GROUP
 
-def getExtractedNativeDependenciesDir() {
-    return new File(getNativeDependencyRoot(), "extracted_native_dependencies")
-}
-injectNativeDependenciesPath()
-
-def injectNativeDependenciesPath() {
-    def extractedNativeDepsDir = getExtractedNativeDependenciesDir()
-
-    def ndkBuildOpt = project.android.defaultConfig.externalNativeBuild.ndkBuild
-    ndkBuildOpt.getArguments().add('EXT_DEP=' + extractedNativeDepsDir.absolutePath)
-
-    def cmakeOpt = project.android.defaultConfig.externalNativeBuild.cmake
-    cmakeOpt.getArguments().add('-DEXT_DEP=' + extractedNativeDepsDir.absolutePath)
+if (rootProject.file('gradle/WeChatPublish.gradle').exists()) {
+    if("External" == rootProject.ext.PUBLISH_CHANNEL) {
+        apply from: rootProject.file('gradle/android-publish.gradle')
+    }
+    else {
+        apply from: rootProject.file('gradle/WeChatPublish.gradle')
+        wechatPublish {
+            artifactId = POM_ARTIFACT_ID
+        }
+    }
 }

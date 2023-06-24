@@ -1,7 +1,0 @@
-# ninja log v5
-0	17	0	clean	2b3bf3ade4361767
-0	277	1687099667	CMakeFiles/matrix_trace_canary.dir/matrix_trace_canary.cpp.o	8547919ed3c269b9
-277	328	1687099667	/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/build/intermediates/cxx/Debug/1ja26e5t/obj/armeabi-v7a/libmatrix_trace_canary.so	ada6e2801ebe93a5
-1	12	0	clean	2b3bf3ade4361767
-0	262	1687099964	CMakeFiles/matrix_trace_canary.dir/matrix_trace_canary.cpp.o	8547919ed3c269b9
-262	314	1687099964	/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/build/intermediates/cxx/Debug/1ja26e5t/obj/armeabi-v7a/libmatrix_trace_canary.so	ada6e2801ebe93a5

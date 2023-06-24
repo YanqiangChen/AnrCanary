@@ -1,0 +1,64 @@
+com/tencent/matrix/util/DeviceUtil.java
+ com.tencent.matrix.util.DeviceUtil
+ com.tencent.matrix.util.DeviceUtil$1
+ com.tencent.matrix.util.DeviceUtil$LEVEL
+com/tencent/matrix/util/MatrixLog.java
+ com.tencent.matrix.util.MatrixLog
+ com.tencent.matrix.util.MatrixLog$1
+ com.tencent.matrix.util.MatrixLog$MatrixLogImp
+com/tencent/matrix/report/IssuePublisher.java
+ com.tencent.matrix.report.IssuePublisher
+ com.tencent.matrix.report.IssuePublisher$OnIssueDetectListener
+com/tencent/mrs/plugin/IDynamicConfig.java
+ com.tencent.mrs.plugin.IDynamicConfig
+ com.tencent.mrs.plugin.IDynamicConfig$ExptEnum
+com/tencent/matrix/plugin/IPlugin.java
+ com.tencent.matrix.plugin.IPlugin
+com/tencent/matrix/BuildConfig.java
+ com.tencent.matrix.BuildConfig
+com/tencent/matrix/lifecycle/owners/ArrayListProxy.java
+ com.tencent.matrix.lifecycle.owners.ArrayListProxy
+ com.tencent.matrix.lifecycle.owners.ArrayListProxy$OnDataChangedListener
+com/tencent/matrix/report/FilePublisher.java
+ com.tencent.matrix.report.FilePublisher
+com/tencent/matrix/listeners/IAppForeground.java
+ com.tencent.matrix.listeners.IAppForeground
+com/tencent/matrix/util/MatrixHandlerThread.java
+ com.tencent.matrix.util.MatrixHandlerThread
+ com.tencent.matrix.util.MatrixHandlerThread$LooperPrinter
+ com.tencent.matrix.util.MatrixHandlerThread$LooperPrinter$1
+ com.tencent.matrix.util.MatrixHandlerThread$LooperPrinter$Info
+com/tencent/matrix/lifecycle/supervisor/ISupervisorProxy.java
+ com.tencent.matrix.lifecycle.supervisor.ISupervisorProxy
+ com.tencent.matrix.lifecycle.supervisor.ISupervisorProxy$Default
+ com.tencent.matrix.lifecycle.supervisor.ISupervisorProxy$Stub
+ com.tencent.matrix.lifecycle.supervisor.ISupervisorProxy$Stub$Proxy
+com/tencent/matrix/lifecycle/supervisor/ISubordinateProxy.java
+ com.tencent.matrix.lifecycle.supervisor.ISubordinateProxy
+ com.tencent.matrix.lifecycle.supervisor.ISubordinateProxy$Default
+ com.tencent.matrix.lifecycle.supervisor.ISubordinateProxy$Stub
+ com.tencent.matrix.lifecycle.supervisor.ISubordinateProxy$Stub$Proxy
+com/tencent/matrix/util/ReflectMethod.java
+ com.tencent.matrix.util.ReflectMethod
+com/tencent/matrix/util/ReflectFiled.java
+ com.tencent.matrix.util.ReflectFiled
+com/tencent/matrix/plugin/Plugin.java
+ com.tencent.matrix.plugin.Plugin
+com/tencent/matrix/Matrix.java
+ com.tencent.matrix.Matrix
+ com.tencent.matrix.Matrix$1
+ com.tencent.matrix.Matrix$Builder
+com/tencent/matrix/AppActiveMatrixDelegate.java
+ com.tencent.matrix.AppActiveMatrixDelegate
+com/tencent/matrix/plugin/PluginListener.java
+ com.tencent.matrix.plugin.PluginListener
+com/tencent/matrix/plugin/DefaultPluginListener.java
+ com.tencent.matrix.plugin.DefaultPluginListener
+com/tencent/matrix/util/ReflectUtils.java
+ com.tencent.matrix.util.ReflectUtils
+com/tencent/matrix/util/MatrixUtil.java
+ com.tencent.matrix.util.MatrixUtil
+ com.tencent.matrix.util.MatrixUtil$1
+ com.tencent.matrix.util.MatrixUtil$2
+com/tencent/matrix/report/Issue.java
+ com.tencent.matrix.report.Issue

@@ -1,3 +1,0 @@
-/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/armeabi-v7a/CMakeFiles/edit_cache.dir
-/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/armeabi-v7a/CMakeFiles/matrix_trace_canary.dir

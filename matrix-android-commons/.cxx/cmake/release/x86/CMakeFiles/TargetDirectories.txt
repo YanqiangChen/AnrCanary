@@ -1,0 +1,11 @@
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/CMakeFiles/edit_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libenhance_dlsym/CMakeFiles/rebuild_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libenhance_dlsym/CMakeFiles/edit_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libenhance_dlsym/CMakeFiles/enhance_dlsym.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libsemi_dlfcn/CMakeFiles/rebuild_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libsemi_dlfcn/CMakeFiles/edit_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libsemi_dlfcn/CMakeFiles/semi_dlfcn.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libxhook/CMakeFiles/rebuild_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libxhook/CMakeFiles/edit_cache.dir
+/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libxhook/CMakeFiles/xhook.dir

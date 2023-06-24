@@ -1,0 +1,2 @@
+com/tencent/matrix/android/commons/BuildConfig.java
+ com.tencent.matrix.android.commons.BuildConfig

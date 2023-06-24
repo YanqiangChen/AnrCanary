@@ -493,7 +493,7 @@ namespace wechat_backtrace {
 #ifdef __arm__
         return Decode32(instructions, amount, start_pos);
 #else
-        return Decode64(reinterpret_cast<const uint64_t *>(instructions), amount, start_pos);
+        return Decode64(instructions, amount, start_pos);
 #endif
     }
 

@@ -1,0 +1,676 @@
+{
+  "stringTable": {
+    "0": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dwechatbacktrace_EXPORTS -I../../../../src/main/cpp/external/libunwindstack -I../../../../src/main/cpp/common -I../../../../src/main/cpp/libwechatbacktrace/include -I../../../../src/main/cpp/external/libunwindstack/include -I../../../../src/main/cpp/dexfile/include -I../../../../src/main/cpp/external/libunwindstack/deps/android-base -I../../../../src/main/cpp/external/libunwindstack/deps/android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/liblzma/C -I../../../../src/main/cpp/external/libunwindstack/deps/sys_compat -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/include -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/demangle -I../../../../src/main/cpp/external/libunwindstack/deps/demangle/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c++17 -fno-exceptions -frtti -fstack-protector -fvisibility=hidden -Wall -Wextra -Wexit-time-destructors -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign",
+    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dwechatbacktrace_EXPORTS -I../../../../src/main/cpp/external/libunwindstack -I../../../../src/main/cpp/common -I../../../../src/main/cpp/libwechatbacktrace/include -I../../../../src/main/cpp/external/libunwindstack/include -I../../../../src/main/cpp/dexfile/include -I../../../../src/main/cpp/external/libunwindstack/deps/android-base -I../../../../src/main/cpp/external/libunwindstack/deps/android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/liblzma/C -I../../../../src/main/cpp/external/libunwindstack/deps/sys_compat -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/include -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/demangle -I../../../../src/main/cpp/external/libunwindstack/deps/demangle/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=c99 -fstack-protector -fvisibility=hidden -Wall -Wextra -Wexit-time-destructors -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign",
+    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/libunwindstack/. -I../../../../src/main/cpp/external/libunwindstack/deps -I../../../../src/main/cpp/external/libunwindstack/include -I../../../../src/main/cpp/external/libunwindstack/deps/android-base -I../../../../src/main/cpp/external/libunwindstack/deps/android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/liblzma/C -I../../../../src/main/cpp/external/libunwindstack/deps/sys_compat -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/include -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include -I../../../../src/main/cpp/external/libunwindstack/deps/demangle -I../../../../src/main/cpp/external/libunwindstack/deps/demangle/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -fvisibility=default -fdata-sections -ffunction-sections -Wexit-time-destructors -Wno-unused-value -std=c++17 -Wall -Wextra -D_7ZIP_ST -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-empty-body -Wno-self-assign",
+    "4": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/libunwindstack/deps/android-base -I../../../../src/main/cpp/external/libunwindstack/deps/android-base/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -Wall -Wextra -Wexit-time-destructors",
+    "5": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/libunwindstack/deps/liblzma/C -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -D_7ZIP_ST -Wall -Wno-enum-conversion -Wno-logical-op-parentheses -Wno-unused-value -Wno-empty-body -Wno-self-assign",
+    "6": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/libunwindstack/deps/sys_compat -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "7": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/include -I../../../../src/main/cpp/external/libunwindstack/deps/libprocinfo/../android-base/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "8": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/external/libunwindstack/deps/demangle -I../../../../src/main/cpp/external/libunwindstack/deps/demangle/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/CMakeLists.txt",
+    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "unwindstack-Debug-arm64-v8a": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" unwindstack",
+      "buildType": "debug",
+      "toolchain": "3093623200",
+      "abi": "arm64-v8a",
+      "artifactName": "unwindstack",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/ArmExidx.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/DwarfCfa.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/DwarfEhFrameWithHdr.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/DwarfMemory.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/DwarfOp.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/DwarfSection.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Elf.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/ElfInterface.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/ElfInterfaceArm.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/JitDebug.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Log.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/LocalUnwinder.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/MapInfo.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Maps.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Memory.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Regs.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/RegsArm.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/RegsArm64.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/RegsX86.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/RegsX86_64.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/RegsMips.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/RegsMips64.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Unwinder.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Symbols.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/Global.cpp",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/libunwindstack.a"
+    },
+    "procinfo-Debug-arm64-v8a": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" procinfo",
+      "buildType": "debug",
+      "toolchain": "3093623200",
+      "abi": "arm64-v8a",
+      "artifactName": "procinfo",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/process.cpp",
+          "flagsOrdinal": 7,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/libprocinfo/libprocinfo.a"
+    },
+    "sys_compat-Debug-arm64-v8a": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" sys_compat",
+      "buildType": "debug",
+      "toolchain": "3093623200",
+      "abi": "arm64-v8a",
+      "artifactName": "sys_compat",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat/compat_uio.c",
+          "flagsOrdinal": 6,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/sys_compat/libsys_compat.a"
+    },
+    "demangle-Debug-arm64-v8a": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" demangle",
+      "buildType": "debug",
+      "toolchain": "3093623200",
+      "abi": "arm64-v8a",
+      "artifactName": "demangle",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/Demangler.cpp",
+          "flagsOrdinal": 8,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/demangle/libdemangle.a"
+    },
+    "lzma-Debug-arm64-v8a": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" lzma",
+      "buildType": "debug",
+      "toolchain": "3093623200",
+      "abi": "arm64-v8a",
+      "artifactName": "lzma",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zAlloc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zArcIn.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zBuf2.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zBuf.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zCrc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zCrcOpt.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zDec.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zFile.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/7zStream.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Aes.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/AesOpt.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Alloc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Bcj2.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Bra86.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Bra.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/BraIA64.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/CpuArch.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Delta.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/LzFind.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Lzma2Dec.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Lzma2Enc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Lzma86Dec.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Lzma86Enc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/LzmaDec.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/LzmaEnc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/LzmaLib.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Ppmd7.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Ppmd7Dec.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Ppmd7Enc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Sha256.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Sort.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/Xz.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/XzCrc64.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/XzCrc64Opt.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/XzDec.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/XzEnc.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/C/XzIn.c",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/liblzma/liblzma.a"
+    },
+    "wechatbacktrace-Debug-arm64-v8a": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" wechatbacktrace",
+      "buildType": "debug",
+      "toolchain": "3093623200",
+      "abi": "arm64-v8a",
+      "artifactName": "wechatbacktrace",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/common/fake_dlfcn.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/common/Utils.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/common/PthreadExt.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/common/Log.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/common/LogExt.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QutStatistics.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/ExidxDecoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/DwarfCfa.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/DwarfSectionDecoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/DwarfEhFrameWithHdrDecoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/DwarfOp.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/ElfWrapper.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenTable.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenMemory.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenTableManager.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenMaps.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenTableGenerator.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenInMemory.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenInterface.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenUnwinder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenJNI.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/LocalMaps.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/FpUnwinder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/Backtrace.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/dex_file_loader.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/compact_offset_table.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/primitive.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/descriptors_names.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/dex_file.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/standard_dex_file.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/compact_dex_file.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/dexfile/dex_file_ext.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/DebugGlobal.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/DebugDexFiles.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/DebugJit.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/libwechatbacktrace/QuickenProperties.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/build/intermediates/cmake/debug/obj/arm64-v8a/libwechatbacktrace.so",
+      "runtimeFiles": []
+    },
+    "android-base-Debug-arm64-v8a": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a\" android-base",
+      "buildType": "debug",
+      "toolchain": "3093623200",
+      "abi": "arm64-v8a",
+      "artifactName": "android-base",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/stringprintf.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/file.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/logging.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/chrono_utils.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/mapped_file.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/parsenetaddress.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/quick_exit.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/strings.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/threads.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/test_utils.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/arm64-v8a/src/main/cpp/external/libunwindstack/deps/android-base/libandroid-base.a"
+    }
+  },
+  "toolchains": {
+    "3093623200": {
+      "cCompilerExecutable": "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+      "cppCompilerExecutable": "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cc",
+    "cpp"
+  ]
+}

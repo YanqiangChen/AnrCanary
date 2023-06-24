@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tencent.matrix"
+    android:versionCode="1"
+    android:versionName="2.1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="${applicationId}.manual.dump" />
+
+    <permission
+        android:name="${applicationId}.matrix.permission.PROCESS_SUPERVISOR"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.matrix.permission.PROCESS_SUPERVISOR" />
+
+    <application>
+
+        <!-- <provider -->
+        <!-- android:name=".lifecycle.MultiProcessLifecycleInitializer" -->
+        <!-- android:authorities="${applicationId}.matrix-process" -->
+        <!-- android:exported="false" -->
+        <!-- android:multiprocess="true" /> -->
+    </application>
+
+</manifest>

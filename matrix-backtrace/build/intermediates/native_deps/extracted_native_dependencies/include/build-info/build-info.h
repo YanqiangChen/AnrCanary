@@ -1,0 +1,8 @@
+#ifndef __MM_AUTOGENARATED_BUILD_INFO_H__
+#define __MM_AUTOGENARATED_BUILD_INFO_H__
+#define WX_BUILD_VERSION ""
+#define WX_BUILD_REVISION ""
+#define WX_BUILD_BRANCH ""
+#define WX_BUILD_TIME ""
+#define WX_BUILD_JOB ""
+#endif //__MM_AUTOGENARATED_BUILD_INFO_H__

@@ -4,9 +4,29 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AnrCanary.iml" filepath="$PROJECT_DIR$/.idea/modules/AnrCanary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AnrCanary.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.main.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-commons/AnrCanary.matrix-android-commons.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-android-lib/AnrCanary.matrix-android-lib.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.main.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-backtrace/AnrCanary.matrix-backtrace.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/matrix-trace-canary/AnrCanary.matrix-trace-canary.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.iml" filepath="$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/nativelib/AnrCanary.nativelib.unitTest.iml" />
     </modules>
   </component>
 </project>

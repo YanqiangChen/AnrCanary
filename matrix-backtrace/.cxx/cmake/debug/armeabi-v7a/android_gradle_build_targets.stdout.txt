@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/armeabi-v7a'
+ninja: no work to do.

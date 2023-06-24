@@ -1,7 +1,0 @@
-Executable : /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
-arguments : 
--C
-/Users/chenyanqiang/AndroidStudioProjects/AnrCanary/matrix-trace-canary/.cxx/Debug/1ja26e5t/armeabi-v7a
-matrix_trace_canary
-jvmArgs : 
-

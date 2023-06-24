@@ -1,54 +1,78 @@
-plugins {
-    id 'com.android.library'
-}
+apply plugin: 'com.android.library'
+
+apply from: "${rootDir}/gradle/WeChatNativeDepend.gradle"
 
 android {
-    compileSdk 33
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdk 29
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+//        versionCode 1
+//        versionName rootProject.ext.VERSION_NAME
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+
+
         externalNativeBuild {
-//            cmake {
-//                targets "xhook"
-//                cppFlags ""
-//            }
             cmake {
-                targets "semi_dlfcn"
-                cppFlags ""
+                targets = ['xhook', 'semi_dlfcn', 'enhance_dlsym']
+                arguments = ["-DEnableLOG=${true ? "ON" : "OFF"}" as String]
             }
-
+            exportHeaders {
+                from('src/main/cpp/libxhook') {
+                    include '**/*.h'
+                }
+                from('src/main/cpp/libsemi_dlfcn') {
+                    include '**/*.h'
+                }
+                from('src/main/cpp/libenhance_dlsym') {
+                    include '**/*.h'
+                }
+            }
         }
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
-            version "3.10.2"
         }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':matrix-android-lib')
+    testImplementation 'junit:junit:4.12'
 
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.4.0'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.annotation:annotation:1.0.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
 }
+
+version = rootProject.ext.VERSION_NAME
+group = rootProject.ext.GROUP
+
+if (rootProject.file('gradle/WeChatPublish.gradle').exists()) {
+    if("External" == rootProject.ext.PUBLISH_CHANNEL){
+        apply from: rootProject.file('gradle/android-publish.gradle')
+    }else {
+        //uploading to WeChat maven repo
+        apply from: rootProject.file('gradle/WeChatPublish.gradle')
+        wechatPublish {
+        artifactId=POM_ARTIFACT_ID}
+    }
+}
+

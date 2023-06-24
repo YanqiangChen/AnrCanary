@@ -12,10 +12,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/matrix-android-commons" />
+            <option value="$PROJECT_DIR$/matrix-android-lib" />
+            <option value="$PROJECT_DIR$/matrix-backtrace" />
             <option value="$PROJECT_DIR$/matrix-trace-canary" />
+            <option value="$PROJECT_DIR$/nativelib" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

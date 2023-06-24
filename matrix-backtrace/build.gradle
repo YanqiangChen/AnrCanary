@@ -1,47 +1,76 @@
-plugins {
-    id 'com.android.library'
-}
+apply plugin: 'com.android.library'
+
+apply from: rootProject.file('gradle/WeChatNativeDepend.gradle')
 
 android {
-    namespace 'com.tencent.matrix_backtrace'
-    compileSdk 33
+    compileSdkVersion rootProject.compileSdkVersion
 
     defaultConfig {
-        minSdk 29
-        targetSdk 33
+        minSdkVersion rootProject.MIN_SDK_VERSION_FOR_HOOK
+        targetSdkVersion rootProject.targetSdkVersion
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+        ndk {
+            abiFilters rootProject.ABI_FILTERS as String[]
+        }
+
         externalNativeBuild {
             cmake {
-                abiFilters "armeabi-v7a"
+                targets = ['wechatbacktrace', 'unwindstack']
+                arguments = ['-DANDROID_STL=c++_shared',
+                             "-DEnableLOG=${true ? "ON" : "OFF"}" as String,
+                             "-DQUT_STATISTIC_ENABLE=${true ? "ON" : "OFF"}" as String]
+            }
+
+            exportHeaders {
+                from('src/main/cpp') {
+                    include 'common/*.h'
+                    moveToDir 'backtrace'
+                }
+                from('src/main/cpp/libwechatbacktrace/include') {
+                    include '**/*.h'
+                    moveToDir 'backtrace'
+                }
+                from('src/main/cpp/external/libunwindstack/include') {
+                    include '**/*.h'
+                    moveToDir 'backtrace'
+                }
+                from('src/main/cpp/dexfile/include') {
+                    include '**/*.h'
+                    moveToDir 'backtrace'
+                }
             }
         }
     }
 
     buildTypes {
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
-            version "3.10.2"
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+
 }
 
-dependencies {
+apply from: project.file('dependencies.gradle')
 
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.4.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-}
+group = rootProject.GROUP
+version = rootProject.VERSION_NAME
+
+//if("External" == rootProject.ext.PUBLISH_CHANNEL) {
+//    apply from: rootProject.file('gradle/android-publish.gradle')
+//}
+//else {
+//    apply from: rootProject.file('gradle/WeChatPublish.gradle')
+//    wechatPublish {
+//        artifactId = POM_ARTIFACT_ID
+//    }
+//}

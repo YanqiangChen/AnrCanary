@@ -83,7 +83,7 @@ static int read_thread_name(pthread_t pthread, char *buf, size_t buf_size) {
 BACKTRACE_EXPORT
 int BACKTRACE_FUNC_WRAPPER(pthread_getname_ext)(pthread_t pthread, char *buf, size_t n) {
 #if __ANDROID_API__ >= 26
-    return pthread_getname_np(pthread, buf, n);
+    return pthread_getname_np(pthread, __buf, __n);
 #else
     return read_thread_name(pthread, buf, n);
 #endif

@@ -1,0 +1,127 @@
+{
+  "stringTable": {
+    "0": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86",
+    "1": "--target=i686-none-linux-android19 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/libenhance_dlsym -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC",
+    "2": "--target=i686-none-linux-android19 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/libsemi_dlfcn -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC",
+    "3": "--target=i686-none-linux-android19 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I../../../../src/main/cpp/libxhook -I../../../../src/main/cpp/libxhook/../libsemi_dlfcn -I../../../../src/main/cpp/libsemi_dlfcn -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/CMakeLists.txt",
+    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libenhance_dlsym/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "enhance_dlsym-Release-x86": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86\" enhance_dlsym",
+      "buildType": "release",
+      "toolchain": "3093623200",
+      "abi": "x86",
+      "artifactName": "enhance_dlsym",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libenhance_dlsym/EnhanceDlsym.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libenhance_dlsym/libenhance_dlsym.a"
+    },
+    "xhook-Release-x86": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86\" xhook",
+      "buildType": "release",
+      "toolchain": "3093623200",
+      "abi": "x86",
+      "artifactName": "xhook",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xh_core.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xh_elf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xh_jni.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xh_log.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xh_util.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xh_version.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xh_maps.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xhook.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/xhook_ext.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libxhook/libxhook.a"
+    },
+    "semi_dlfcn-Release-x86": {
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86\" semi_dlfcn",
+      "buildType": "release",
+      "toolchain": "3093623200",
+      "abi": "x86",
+      "artifactName": "semi_dlfcn",
+      "files": [
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn/semi_dlfcn.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn/sd_log.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86/src/main/cpp/libsemi_dlfcn/libsemi_dlfcn.a"
+    }
+  },
+  "toolchains": {
+    "3093623200": {
+      "cCompilerExecutable": "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+      "cppCompilerExecutable": "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

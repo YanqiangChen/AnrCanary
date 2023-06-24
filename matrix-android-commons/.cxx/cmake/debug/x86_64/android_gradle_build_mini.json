@@ -1,0 +1,37 @@
+{
+  "buildFiles": [
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/CMakeLists.txt",
+    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libenhance_dlsym/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn/CMakeLists.txt",
+    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "xhook-Debug-x86_64": {
+      "artifactName": "xhook",
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64\" xhook",
+      "abi": "x86_64",
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64/src/main/cpp/libxhook/libxhook.a",
+      "runtimeFiles": []
+    },
+    "semi_dlfcn-Debug-x86_64": {
+      "artifactName": "semi_dlfcn",
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64\" semi_dlfcn",
+      "abi": "x86_64",
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64/src/main/cpp/libsemi_dlfcn/libsemi_dlfcn.a",
+      "runtimeFiles": []
+    },
+    "enhance_dlsym-Debug-x86_64": {
+      "artifactName": "enhance_dlsym",
+      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64\" enhance_dlsym",
+      "abi": "x86_64",
+      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64/src/main/cpp/libenhance_dlsym/libenhance_dlsym.a",
+      "runtimeFiles": []
+    }
+  }
+}

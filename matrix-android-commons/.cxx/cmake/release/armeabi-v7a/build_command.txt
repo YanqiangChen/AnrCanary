@@ -1,0 +1,23 @@
+                Executable : /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Users/project/matrix/matrix/matrix-android/matrix-android-commons
+-DCMAKE_FIND_ROOT_PATH=/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/prefab/armeabi-v7a/prefab
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_TOOLCHAIN_FILE=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_NDK=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462
+-DANDROID_PLATFORM=android-19
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DCMAKE_ANDROID_NDK=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/project/matrix/matrix/matrix-android/matrix-android-commons/build/intermediates/cmake/release/obj/armeabi-v7a
+-DCMAKE_MAKE_PROGRAM=/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=19
+-DEXT_DEP=/Users/project/matrix/matrix/matrix-android/matrix-android-commons/build/intermediates/native_deps/extracted_native_dependencies
+-DEnableLOG=OFF
+-B/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a
+-GNinja
+jvmArgs : 
+
+Build command args:

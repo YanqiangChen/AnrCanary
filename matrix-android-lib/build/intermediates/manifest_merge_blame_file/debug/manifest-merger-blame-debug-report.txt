@@ -1,0 +1,36 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.matrix" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="29" />
+7-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml
+8
+9    <uses-permission android:name="${applicationId}.manual.dump" />
+9-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:5:5-68
+9-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:5:22-65
+10
+11    <permission
+11-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:7:5-9:47
+12        android:name="${applicationId}.matrix.permission.PROCESS_SUPERVISOR"
+12-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:8:9-77
+13        android:protectionLevel="signature" />
+13-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:9:9-44
+14
+15    <uses-permission android:name="${applicationId}.matrix.permission.PROCESS_SUPERVISOR" />
+15-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:11:5-93
+15-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:11:22-90
+16
+17    <application>
+17-->/Users/project/AnrCanary/matrix-android-lib/src/main/AndroidManifest.xml:13:5-19:19
+18
+19        <!-- <provider -->
+20        <!-- android:name=".lifecycle.MultiProcessLifecycleInitializer" -->
+21        <!-- android:authorities="${applicationId}.matrix-process" -->
+22        <!-- android:exported="false" -->
+23        <!-- android:multiprocess="true" /> -->
+24    </application>
+25
+26</manifest>
