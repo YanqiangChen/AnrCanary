@@ -32,7 +32,7 @@ public class Constants {
     public static final int TIME_MILLIS_TO_NANO = 1000000;
     public static final int TIME_SECOND_TO_NANO = 1000000000;
     public static final int DEFAULT_INPUT_EXPIRED_TIME = 500;
-    public static final int DEFAULT_ANR = 5 * 1000;
+    public static final int DEFAULT_ANR = 1 * 1000;
     public static final int DEFAULT_NORMAL_LAG = 2 * 1000;
     public static final int DEFAULT_IDLE_HANDLER_LAG = 2 * 1000;
     public static final int DEFAULT_TOUCH_EVENT_LAG = 2 * 1000;

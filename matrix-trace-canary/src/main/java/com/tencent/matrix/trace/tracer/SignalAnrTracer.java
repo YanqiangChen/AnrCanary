@@ -44,6 +44,7 @@ import com.tencent.matrix.util.DeviceUtil;
 import com.tencent.matrix.util.MatrixLog;
 import com.tencent.matrix.util.MatrixUtil;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -465,7 +466,11 @@ public class SignalAnrTracer extends Tracer {
             }
             jsonObject.put(SharePluginInfo.ISSUE_SCENE, scene);
             jsonObject.put(SharePluginInfo.ISSUE_PROCESS_FOREGROUND, currentForeground);
-            jsonObject.put("queue",queue);
+            JSONArray jsonArray = new JSONArray();
+            for(int i=0;i<queue.size();i++){
+                jsonArray.put(queue.poll());
+            }
+            jsonObject.put("queue",jsonArray);
             jsonObject.put("blockMessages",blockMessages);
             jsonObject.put("longStrs",longStrs);
 

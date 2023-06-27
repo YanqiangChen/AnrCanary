@@ -425,7 +425,7 @@ public class LooperMonitor implements MessageQueue.IdleHandler {
             if (historyMsgRecorder) {
                 messageStartTime = System.currentTimeMillis();
                 if(messageEndTime-messageEndTime > 0){
-                    recordMsg("IDLE", messageEndTime-messageEndTime);  //IDLE
+                    recordMsg("IDLE", messageEndTime-messageStartTime);  //IDLE
                 }
                 latestMsgLog = log;
                 recentMCount++;

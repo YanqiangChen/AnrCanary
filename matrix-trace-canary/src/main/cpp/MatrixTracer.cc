@@ -149,7 +149,7 @@ int (*original_open)(const char *pathname, int flags, mode_t mode);
 
 int my_open(const char *pathname, int flags, mode_t mode) {
     if (pathname!= nullptr) {
-        if (strcmp(pathname, HOOK_OPEN_PATH) == 0) {
+        if (strcmp(pathname, HOOK_OPEN_PATH) == 0) {   //判断 connect path /dev/socket/tombstoned_java_trace
             signalCatcherTid = gettid();
             isTraceWrite = true;
         }
