@@ -2,6 +2,7 @@ package com.anr.anrcanary;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -29,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tvShowNative = findViewById(R.id.tv_native);
         handler = new Handler();
 //        handler.postDelayed(new Runnable() {
 //            @Override
@@ -58,16 +58,34 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        String content = "";
-                        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-                            content = readSaveFile(getDataDir().getPath()+"/anrtest.txt");
-                            saveToFile(content,getDataDir().getPath(),"anrtest123.txt");
+                        for(int i=0;i<100;i++){
+                            String content = "";
+                            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                                content = readSaveFile(getDataDir().getPath()+"/anrtest.txt");
+                                saveToFile(content,getDataDir().getPath(),"anrtest123.txt");
+                            }
                         }
-                        handler.postDelayed(this,1000);
+
+                        handler.postDelayed(this,10);
 
                     }
                 },1000);
 
+            }
+        });
+        findViewById(R.id.btn_startService).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,MyService.class);
+                startService(intent);
+
+            }
+        });
+        findViewById(R.id.btn_stopService).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,MyService.class);
+                stopService(intent);
             }
         });
 
@@ -113,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
             out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filePath+"/"+fileName,true)));
             out.newLine();
             out.write(content);
-            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
 
         } catch (IOException e) {
             e.printStackTrace();

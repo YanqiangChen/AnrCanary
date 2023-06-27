@@ -470,7 +470,7 @@ public class SignalAnrTracer extends Tracer {
             for(int i=0;i<queue.size();i++){
                 jsonArray.put(queue.poll());
             }
-            jsonObject.put("queue",jsonArray);
+            jsonObject.put("queue",jsonArray.toString());
             jsonObject.put("blockMessages",blockMessages);
             jsonObject.put("longStrs",longStrs);
 
