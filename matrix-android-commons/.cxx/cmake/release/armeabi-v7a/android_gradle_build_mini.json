@@ -1,36 +1,36 @@
 {
   "buildFiles": [
-    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/CMakeLists.txt",
-    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
-    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
-    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libenhance_dlsym/CMakeLists.txt",
-    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn/CMakeLists.txt",
-    "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/CMakeLists.txt"
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/CMakeLists.txt",
+    "/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libenhance_dlsym/CMakeLists.txt",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libsemi_dlfcn/CMakeLists.txt",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" clean"
+    "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" clean"
   ],
-  "buildTargetsCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "enhance_dlsym-Release-armeabi-v7a": {
       "artifactName": "enhance_dlsym",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" enhance_dlsym",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" enhance_dlsym",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a/src/main/cpp/libenhance_dlsym/libenhance_dlsym.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a/src/main/cpp/libenhance_dlsym/libenhance_dlsym.a",
       "runtimeFiles": []
     },
     "xhook-Release-armeabi-v7a": {
       "artifactName": "xhook",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" xhook",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" xhook",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a/src/main/cpp/libxhook/libxhook.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a/src/main/cpp/libxhook/libxhook.a",
       "runtimeFiles": []
     },
     "semi_dlfcn-Release-armeabi-v7a": {
       "artifactName": "semi_dlfcn",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" semi_dlfcn",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a\" semi_dlfcn",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a/src/main/cpp/libsemi_dlfcn/libsemi_dlfcn.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/armeabi-v7a/src/main/cpp/libsemi_dlfcn/libsemi_dlfcn.a",
       "runtimeFiles": []
     }
   }

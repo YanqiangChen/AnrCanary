@@ -1,4 +1,4 @@
-# Install script for directory: /Users/project/matrix/matrix/matrix-android/matrix-backtrace
+# Install script for directory: /Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/cmake_install.cmake")
+  include("/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

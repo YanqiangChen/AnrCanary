@@ -25,6 +25,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -35,9 +40,9 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation project(':matrix-trace-canary')
+//    implementation project(':matrix-trace-canary')
     implementation 'com.alibaba:fastjson:1.1.34.android'
 
-//    implementation project(':matrix-android-commons')
-//    implementation project(':matrix-backtrace')
+    implementation project(':matrix-android-commons')
+    implementation project(':matrix-trace-canary')
 }

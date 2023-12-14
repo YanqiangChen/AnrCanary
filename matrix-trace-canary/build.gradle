@@ -5,35 +5,17 @@ apply from: rootProject.file('gradle/WeChatNativeDepend.gradle')
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-//    publishNonDefault true
     defaultConfig {
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdk 23
+        targetSdk 29
+        versionCode 1
+        versionName "1.0"
 
-        externalNativeBuild {
-            cmake {
-                cppFlags "-std=gnu++11 -frtti -fexceptions"
-            }
-            ndk {
-                abiFilters "armeabi-v7a", "arm64-v8a"
-            }
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
         }
 
     }
-//    buildTypes {
-//        release {
-//            minifyEnabled false
-//            consumerProguardFiles 'proguard-rules.pro'
-//        }
-//    }
-//
-//    externalNativeBuild {
-//        cmake {
-//            path "CMakeLists.txt"
-//        }
-//    }
-//
-
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
@@ -50,37 +32,19 @@ android {
         }
     }
 
-    externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
-        }
-    }
 
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     androidTestImplementation 'androidx.annotation:annotation:1.0.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-
     testImplementation 'junit:junit:4.12'
     api project(':matrix-android-lib')
-    implementation project(':matrix-android-commons')
-    implementation project(':matrix-backtrace')
+    api project(':matrix-android-commons')
+    api project(':matrix-backtrace')
 }
 
 version = rootProject.ext.VERSION_NAME
 group = rootProject.ext.GROUP
 
-if (rootProject.file('gradle/WeChatPublish.gradle').exists()) {
-    if("External" == rootProject.ext.PUBLISH_CHANNEL) {
-        apply from: rootProject.file('gradle/android-publish.gradle')
-    }
-    else {
-        apply from: rootProject.file('gradle/WeChatPublish.gradle')
-        wechatPublish {
-            artifactId = POM_ARTIFACT_ID
-        }
-    }
-}

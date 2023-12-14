@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-trace-canary/CMakeLists.txt",
+    "/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-trace-canary/.cxx/cmake/release/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-trace-canary/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "trace-canary-Release-armeabi-v7a": {
+      "artifactName": "trace-canary",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-trace-canary/.cxx/cmake/release/armeabi-v7a\" trace-canary",
+      "abi": "armeabi-v7a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-trace-canary/build/intermediates/cmake/release/obj/armeabi-v7a/libtrace-canary.so",
+      "runtimeFiles": []
+    }
+  }
+}

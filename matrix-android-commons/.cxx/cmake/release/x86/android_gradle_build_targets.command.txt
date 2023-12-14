@@ -1,7 +1,7 @@
-Executable : /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+Executable : /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
 arguments : 
 -C
-/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86
+/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/release/x86
 enhance_dlsym
 semi_dlfcn
 xhook

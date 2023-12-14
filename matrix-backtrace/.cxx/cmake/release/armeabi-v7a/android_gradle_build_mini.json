@@ -1,67 +1,67 @@
 {
   "buildFiles": [
-    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/CMakeLists.txt",
-    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
-    "/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
-    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/CMakeLists.txt",
-    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/CMakeLists.txt",
-    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/CMakeLists.txt",
-    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat/CMakeLists.txt",
-    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/CMakeLists.txt",
-    "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/CMakeLists.txt"
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/CMakeLists.txt",
+    "/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/CMakeLists.txt",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/android-base/CMakeLists.txt",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/liblzma/CMakeLists.txt",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/sys_compat/CMakeLists.txt",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/libprocinfo/CMakeLists.txt",
+    "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/src/main/cpp/external/libunwindstack/deps/demangle/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" clean"
+    "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" clean"
   ],
-  "buildTargetsCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "android-base-Release-armeabi-v7a": {
       "artifactName": "android-base",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" android-base",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" android-base",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/android-base/libandroid-base.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/android-base/libandroid-base.a",
       "runtimeFiles": []
     },
     "wechatbacktrace-Release-armeabi-v7a": {
       "artifactName": "wechatbacktrace",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" wechatbacktrace",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" wechatbacktrace",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/build/intermediates/cmake/release/obj/armeabi-v7a/libwechatbacktrace.so",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/build/intermediates/cmake/release/obj/armeabi-v7a/libwechatbacktrace.so",
       "runtimeFiles": []
     },
     "demangle-Release-armeabi-v7a": {
       "artifactName": "demangle",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" demangle",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" demangle",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/demangle/libdemangle.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/demangle/libdemangle.a",
       "runtimeFiles": []
     },
     "lzma-Release-armeabi-v7a": {
       "artifactName": "lzma",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" lzma",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" lzma",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/liblzma/liblzma.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/liblzma/liblzma.a",
       "runtimeFiles": []
     },
     "sys_compat-Release-armeabi-v7a": {
       "artifactName": "sys_compat",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" sys_compat",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" sys_compat",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/sys_compat/libsys_compat.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/sys_compat/libsys_compat.a",
       "runtimeFiles": []
     },
     "procinfo-Release-armeabi-v7a": {
       "artifactName": "procinfo",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" procinfo",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" procinfo",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/libprocinfo/libprocinfo.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/deps/libprocinfo/libprocinfo.a",
       "runtimeFiles": []
     },
     "unwindstack-Release-armeabi-v7a": {
       "artifactName": "unwindstack",
-      "buildCommand": "/Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" unwindstack",
+      "buildCommand": "/Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a\" unwindstack",
       "abi": "armeabi-v7a",
-      "output": "/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/libunwindstack.a",
+      "output": "/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/release/armeabi-v7a/src/main/cpp/external/libunwindstack/libunwindstack.a",
       "runtimeFiles": []
     }
   }

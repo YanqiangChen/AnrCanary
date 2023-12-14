@@ -2,50 +2,51 @@
 <module external.linked.project.id=":matrix-android-lib:androidTest" external.linked.project.path="$MODULE_DIR$/../../../matrix-android-lib" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="5" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <additionalVisibleModuleNames>:matrix-android-lib:main</additionalVisibleModuleNames>
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
         </compilerSettings>
         <compilerArguments>
           <flagArguments>
-            <flagArg name="noReflect" arg="true" />
             <flagArg name="noStdlib" arg="true" />
           </flagArguments>
           <stringArguments>
             <stringArg name="classpath">
               <args>
                 <arg>$MODULE_DIR$/../../../matrix-android-lib/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/9e93003e1b385aec13a2fb41b85ade95/transformed/jetified-junit-1.1.1-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/7433800e0d318cbc92ca554e548c2671/transformed/jetified-core-1.2.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/82c51db0e22e6b0aad278f6bf1ef318a/transformed/jetified-junit-1.1.1-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6e03b15a9d0ffc0a1d1b402f08261c75/transformed/jetified-core-1.2.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.3.1/fc466261d52f4433863642fb40d12441ae274a98/lifecycle-common-2.3.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/8e63ec55d91ac47f069ed6e71f8e8ff9/transformed/espresso-core-3.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/877d717502a892b6cc1659ccffef22e6/transformed/runner-1.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ed6a8d6fede80a56ccfb889082f495d4/transformed/monitor-1.2.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/e78db68040b59080306670a47abebbd5/transformed/espresso-core-3.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/e42ccd96d25ffee5f0c42487cd0eb18c/transformed/runner-1.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/a37ba402cfe2bfd2b0c24d93dbcccf8b/transformed/monitor-1.2.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/8b80361bfe9f9472623ee838f7bf57ad/transformed/jetified-mockito-core-2.8.9.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/ac859ff19835e1b5742369cc5140de4e/transformed/jetified-mockito-android-2.8.9.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/07a353eef5bcd56efccec670bc4a7bfc/transformed/jetified-kotlin-stdlib-1.4.32.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/fb38e4c62324d3512b6716a2435bfb9e/transformed/jetified-junit-4.12.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a7f8520da3a54ea64660c3e29403c652/transformed/jetified-hamcrest-integration-1.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/565e98ab90e7a8bd581d97e4f7fe3236/transformed/jetified-hamcrest-library-1.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/c9f31a5a10dd38ec7ad8c042e4c9fa0f/transformed/jetified-hamcrest-core-1.3.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/91060dc845cc1f4f0c8d574ee71b228e/transformed/jetified-kxml2-2.3.0.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/2c55380ba796b24ea1a8f94da3c7bb61/transformed/espresso-idling-resource-3.1.0-api.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/02768d4c3c61451c3bdf0e5c9f098a70/transformed/jetified-javawriter-2.1.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/42dd29cdb7b480749ddb05fc870057d7/transformed/jetified-javax.inject-1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/14a753bab5ecc6bd58d9e7b15bfbac92/transformed/jetified-jsr305-2.0.1.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/821e3ffa328737a86fca69ffce0fdc16/transformed/jetified-kotlin-stdlib-common-1.4.32.jar</arg>
-                <arg>$USER_HOME$/.gradle/caches/transforms-3/a32ccaca86045f17659120c71188e062/transformed/jetified-annotations-13.0.jar</arg>
-                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-31/android.jar</arg>
-                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-31/optional/android.test.base.jar</arg>
-                <arg>$USER_HOME$/Library/Android/sdk/build-tools/30.0.2/core-lambda-stubs.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/f991429f54e7901a2cda295694ba638f/transformed/jetified-mockito-core-2.8.9.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/5ed3a4487242ae07b0d20aa914134372/transformed/jetified-mockito-android-2.8.9.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/ba0fd337bf31eaa5dfd3d8fc69842c6d/transformed/jetified-kotlin-stdlib-jdk8-1.6.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6d8e0e766ee9162357f8c8812dad134f/transformed/jetified-junit-4.12.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6a53520bf3a4b7cd1fe5e26dbc65f415/transformed/jetified-hamcrest-integration-1.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/f5fffd527219d57c6f465088406c0a4f/transformed/jetified-hamcrest-library-1.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/5400d9d5dbabe030a0773832593f32c9/transformed/jetified-hamcrest-core-1.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/2cfa1331b1c1b64d4b2484c215ed76e0/transformed/jetified-kxml2-2.3.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/86aa955c2b878cb1e94261296952c401/transformed/espresso-idling-resource-3.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6b080f78ae155055c1da8c6cca22ac5a/transformed/jetified-javawriter-2.1.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/083eb93b203bf3dc05972961d53b0935/transformed/jetified-javax.inject-1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/e2415fff3f0c5caf409f6e2d20d1d376/transformed/jetified-jsr305-2.0.1.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/d97e009856bc5d8bf72b9c5cd7294f4d/transformed/jetified-kotlin-stdlib-jdk7-1.6.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/cc99fdd8c6113c5e4df34b2c846ee1ea/transformed/jetified-kotlin-stdlib-1.6.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/49c59b298586381ee0ca53fb1cfc397f/transformed/jetified-annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/d0c33c943db906ea7802c8c82d498d9e/transformed/jetified-kotlin-stdlib-common-1.6.0.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-33/android.jar</arg>
+                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-33/optional/android.test.base.jar</arg>
               </args>
             </stringArg>
             <stringArg name="destination" arg="$MODULE_DIR$/../../../matrix-android-lib/build/tmp/kotlin-classes/debugAndroidTest" />
-            <stringArg name="jvmTarget" arg="1.6" />
+            <stringArg name="jvmTarget" arg="1.8" />
             <stringArg name="moduleName" arg="matrix-android-lib_debug" />
-            <stringArg name="apiVersion" arg="1.4" />
-            <stringArg name="languageVersion" arg="1.4" />
+            <stringArg name="apiVersion" arg="1.6" />
+            <stringArg name="languageVersion" arg="1.6" />
           </stringArguments>
           <arrayArguments>
             <arrayArg name="friendPaths">
@@ -67,16 +68,15 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../matrix-android-lib/src/main/res;file://$MODULE_DIR$/../../../matrix-android-lib/src/debug/res;file://$MODULE_DIR$/../../../matrix-android-lib/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../matrix-android-lib/build/generated/res/resValues/debug" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="" />
         <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../matrix-android-lib/src/androidTest/res;file://$MODULE_DIR$/../../../matrix-android-lib/src/androidTestDebug/res;file://$MODULE_DIR$/../../../matrix-android-lib/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../matrix-android-lib/build/generated/res/resValues/androidTest/debug" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
         <option name="PROJECT_TYPE" value="1" />
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../../matrix-android-lib/build/intermediates/javac/debug/classes" />
-    <output-test url="file://$MODULE_DIR$/../../../matrix-android-lib/build/intermediates/javac/debugUnitTest/classes" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output-test url="file://$MODULE_DIR$/../../../matrix-android-lib/build/intermediates/javac/debugAndroidTest/classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../matrix-android-lib/build/generated/aidl_source_output_dir/debugAndroidTest/out" />
     <content url="file://$MODULE_DIR$/../../../matrix-android-lib/build/generated/ap_generated_sources/debugAndroidTest/out" />
@@ -91,11 +91,17 @@
     <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="AnrCanary.matrix-android-lib.main" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.ext:junit:1.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:core:1.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-core:3.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:runner:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:2.8.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-android:2.8.9" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3" level="project" />
@@ -104,14 +110,11 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.32" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.ext:junit:1.1.1@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:core:1.2.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-core:3.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:runner:1.1.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.2.0@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: /Users/chenyanqiang/Library/Android/sdk/platforms/android-33/optional/android.test.base.jar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="AnrCanary.matrix-android-lib.main" />
 </module>

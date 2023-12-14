@@ -1,4 +1,4 @@
-# Install script for directory: /Users/project/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook
+# Install script for directory: /Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/src/main/cpp/libxhook
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

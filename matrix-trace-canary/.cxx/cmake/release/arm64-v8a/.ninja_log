@@ -1,0 +1,20 @@
+# ninja log v5
+0	183	1702473038	build.ninja	1adc5184f58e664
+0	12	0	clean	2b3bf3ade4361767
+0	15	0	clean	2b3bf3ade4361767
+0	18	0	clean	2b3bf3ade4361767
+0	14	0	clean	2b3bf3ade4361767
+0	13	0	clean	2b3bf3ade4361767
+0	18	0	clean	2b3bf3ade4361767
+0	14	0	clean	2b3bf3ade4361767
+0	20	0	clean	2b3bf3ade4361767
+0	52	1702474110	build.ninja	1adc5184f58e664
+1	217	1702474110	CMakeFiles/trace-canary.dir/src/main/cpp/nativehelper/managed_jnienv.cc.o	2c4064deefd08230
+0	395	1702474110	CMakeFiles/trace-canary.dir/src/main/cpp/Support.cc.o	e3f03d1e64666785
+1	461	1702474110	CMakeFiles/trace-canary.dir/src/main/cpp/TouchEventTracer.cc.o	53f75a062cf434d4
+0	523	1702474110	CMakeFiles/trace-canary.dir/src/main/cpp/SignalHandler.cc.o	66f64d04df6ca5d0
+0	645	1702474110	CMakeFiles/trace-canary.dir/src/main/cpp/AnrDumper.cc.o	3dbf71e747c312ab
+0	1353	1702474111	CMakeFiles/trace-canary.dir/src/main/cpp/MatrixTracer.cc.o	ce34f37c07f0bd1
+1353	1549	1702474111	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libtrace-canary.so	3c06ced9d3df47f0
+2	1189	1702474782	CMakeFiles/trace-canary.dir/src/main/cpp/MatrixTracer.cc.o	ce34f37c07f0bd1
+1189	1371	1702474782	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libtrace-canary.so	3c06ced9d3df47f0

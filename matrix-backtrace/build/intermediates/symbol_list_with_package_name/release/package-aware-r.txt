@@ -1,3 +1,0 @@
-com.tencent.matrix.backtrace
-drawable ic_launcher
-string app_name

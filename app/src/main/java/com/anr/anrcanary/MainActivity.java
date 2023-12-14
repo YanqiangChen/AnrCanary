@@ -42,19 +42,19 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_anr).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(getApplicationContext(),
-//                        "连续点击两次产生Input ANR",
-//                        Toast.LENGTH_LONG).show();
-//
-//                try {
-//                    Thread.sleep(10 * 1000);
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//
-//                Toast.makeText(getApplicationContext(),
-//                        "Sleep end",
-//                        Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),
+                        "连续点击两次产生Input ANR",
+                        Toast.LENGTH_LONG).show();
+
+                try {
+                    Thread.sleep(10 * 1000);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                Toast.makeText(getApplicationContext(),
+                        "Sleep end",
+                        Toast.LENGTH_SHORT).show();
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {

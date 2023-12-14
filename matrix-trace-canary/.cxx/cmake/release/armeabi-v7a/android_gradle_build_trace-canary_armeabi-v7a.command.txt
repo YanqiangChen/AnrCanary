@@ -1,0 +1,7 @@
+Executable : /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-trace-canary/.cxx/cmake/release/armeabi-v7a
+trace-canary
+jvmArgs : 
+

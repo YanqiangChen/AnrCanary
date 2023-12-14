@@ -1,36 +1,38 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.tencent.matrix.backtrace" >
-4
-5    <uses-sdk
-6        android:minSdkVersion="21"
-6-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml
-7        android:targetSdkVersion="29" />
-7-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml
-8
-9    <permission
-9-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:4:5-6:47
-10        android:name="${applicationId}.backtrace.warmed_up"
-10-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:5:9-60
-11        android:protectionLevel="signature" />
-11-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:6:9-44
-12
-13    <uses-permission android:name="${applicationId}.backtrace.warmed_up" />
-13-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:7:5-76
-13-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:7:22-73
+3    package="com.tencent.matrix.backtrace"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:4:5-6:47
+12        android:name="${applicationId}.backtrace.warmed_up"
+12-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:5:9-60
+13        android:protectionLevel="signature" />
+13-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:6:9-44
 14
-15    <application>
-15-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:9:5-17:19
-16        <service
-16-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:11:9-15:54
-17            android:name="com.tencent.matrix.backtrace.WarmUpService"
-17-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:12:13-42
-18            android:enabled="true"
-18-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:13:13-35
-19            android:exported="false"
-19-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:14:13-37
-20            android:process=":backtrace__" />
-20-->/Users/project/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:15:13-43
-21    </application>
-22
-23</manifest>
+15    <uses-permission android:name="${applicationId}.backtrace.warmed_up" />
+15-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:7:5-76
+15-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:7:22-73
+16
+17    <application>
+17-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:9:5-17:19
+18        <service
+18-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:11:9-15:54
+19            android:name="com.tencent.matrix.backtrace.WarmUpService"
+19-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:12:13-42
+20            android:enabled="true"
+20-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:13:13-35
+21            android:exported="false"
+21-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:14:13-37
+22            android:process=":backtrace__" />
+22-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-backtrace/src/main/AndroidManifest.xml:15:13-43
+23    </application>
+24
+25</manifest>

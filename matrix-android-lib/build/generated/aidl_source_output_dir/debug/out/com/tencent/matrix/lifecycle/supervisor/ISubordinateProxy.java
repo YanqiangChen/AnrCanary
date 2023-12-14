@@ -235,13 +235,7 @@ public interface ISubordinateProxy extends android.os.IInterface
     static final int TRANSACTION_dispatchDeath = (android.os.IBinder.FIRST_CALL_TRANSACTION + 2);
     static final int TRANSACTION_getMemInfo = (android.os.IBinder.FIRST_CALL_TRANSACTION + 3);
     public static boolean setDefaultImpl(com.tencent.matrix.lifecycle.supervisor.ISubordinateProxy impl) {
-      // Only one user of this interface can use this function
-      // at a time. This is a heuristic to detect if two different
-      // users in the same process use this function.
-      if (Stub.Proxy.sDefaultImpl != null) {
-        throw new IllegalStateException("setDefaultImpl() called twice");
-      }
-      if (impl != null) {
+      if (Stub.Proxy.sDefaultImpl == null && impl != null) {
         Stub.Proxy.sDefaultImpl = impl;
         return true;
       }

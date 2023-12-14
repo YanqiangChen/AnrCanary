@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color dark_text
+color level_best_color
+color level_frozen_color
+color level_high_color
+color level_middle_color
+color level_normal_color
+id animation_duration_tv
+id chart
+id command_issue_duration_tv
+id draw_duration_tv
+id extra_info
+id fps_view
+id gpu_duration_tv
+id input_handling_duration_tv
+id layout_measure_duration_tv
+id level_frozen
+id level_high
+id level_middle
+id level_normal
+id scene_view
+id sum_frozen
+id sum_high
+id sum_middle
+id sum_normal
+id swap_buffers_duration_tv
+id sync_duration_tv
+id total_duration_tv
+id unknown_delay_duration_tv
+layout float_frame_view
+string app_name

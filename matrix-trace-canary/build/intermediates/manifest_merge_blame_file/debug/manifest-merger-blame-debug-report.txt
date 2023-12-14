@@ -1,0 +1,21 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.matrix.trace"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:3:9-82
+11-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:3:26-79
+12
+13    <application>
+13-->/Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:4:9-5:23
+14    </application>
+15
+16</manifest>

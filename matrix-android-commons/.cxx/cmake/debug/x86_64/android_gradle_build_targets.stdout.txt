@@ -1,2 +1,2 @@
-ninja: Entering directory `/Users/project/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64'
+ninja: Entering directory `/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-android-commons/.cxx/cmake/debug/x86_64'
 ninja: no work to do.

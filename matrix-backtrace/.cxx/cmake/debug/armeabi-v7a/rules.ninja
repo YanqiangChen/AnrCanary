@@ -25,7 +25,7 @@ rule CUSTOM_COMMAND
 rule C_COMPILER__wechatbacktrace
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
   description = Building C object $out
 
 
@@ -35,7 +35,7 @@ rule C_COMPILER__wechatbacktrace
 rule CXX_COMPILER__wechatbacktrace
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -43,7 +43,7 @@ rule CXX_COMPILER__wechatbacktrace
 # Rule for linking CXX shared library.
 
 rule CXX_SHARED_LIBRARY_LINKER__wechatbacktrace
-  command = $PRE_LINK && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
@@ -54,7 +54,7 @@ rule CXX_SHARED_LIBRARY_LINKER__wechatbacktrace
 rule CXX_COMPILER__unwindstack
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -62,7 +62,7 @@ rule CXX_COMPILER__unwindstack
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__unwindstack
-  command = $PRE_LINK && /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -73,7 +73,7 @@ rule CXX_STATIC_LIBRARY_LINKER__unwindstack
 rule CXX_COMPILER__android-base
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -81,7 +81,7 @@ rule CXX_COMPILER__android-base
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__android-base
-  command = $PRE_LINK && /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -92,7 +92,7 @@ rule CXX_STATIC_LIBRARY_LINKER__android-base
 rule C_COMPILER__lzma
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
   description = Building C object $out
 
 
@@ -100,7 +100,7 @@ rule C_COMPILER__lzma
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__lzma
-  command = $PRE_LINK && /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -111,7 +111,7 @@ rule C_STATIC_LIBRARY_LINKER__lzma
 rule C_COMPILER__sys_compat
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
   description = Building C object $out
 
 
@@ -119,7 +119,7 @@ rule C_COMPILER__sys_compat
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__sys_compat
-  command = $PRE_LINK && /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -130,7 +130,7 @@ rule C_STATIC_LIBRARY_LINKER__sys_compat
 rule CXX_COMPILER__procinfo
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -138,7 +138,7 @@ rule CXX_COMPILER__procinfo
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__procinfo
-  command = $PRE_LINK && /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -149,7 +149,7 @@ rule CXX_STATIC_LIBRARY_LINKER__procinfo
 rule CXX_COMPILER__demangle
   depfile = $DEP_FILE
   deps = gcc
-  command = /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -157,7 +157,7 @@ rule CXX_COMPILER__demangle
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__demangle
-  command = $PRE_LINK && /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/ctrip/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
+  command = $PRE_LINK && /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -E remove $TARGET_FILE && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /Users/chenyanqiang/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -166,7 +166,7 @@ rule CXX_STATIC_LIBRARY_LINKER__demangle
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/project/matrix/matrix/matrix-android/matrix-backtrace -B/Users/project/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/armeabi-v7a
+  command = /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace -B/Volumes/Macintosh_HD/projectV2/study/matrix/matrix/matrix-android/matrix-backtrace/.cxx/cmake/debug/armeabi-v7a
   description = Re-running CMake...
   generator = 1
 
@@ -175,7 +175,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -t clean
+  command = /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -t clean
   description = Cleaning all built files...
 
 
@@ -183,6 +183,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = /Users/ctrip/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -t targets
+  command = /Users/chenyanqiang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -t targets
   description = All primary targets available:
 

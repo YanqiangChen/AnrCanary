@@ -1,0 +1,43 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:2:11-45
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:1-7:12
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:3:9-82
+	android:name
+		ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:3:26-79
+application
+ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml:4:9-5:23
+uses-sdk
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Macintosh_HD/projectV2/AnrCanary/matrix-trace-canary/src/main/AndroidManifest.xml

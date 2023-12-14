@@ -262,7 +262,7 @@ public class TraceConfig implements IDefaultConfig {
             return this;
         }
 
-        public Builder looperAnrTracer(boolean enable) {
+        public Builder enableAnrTrace(boolean enable) {
             config.defaultAnrEnable = enable;
             return this;
         }

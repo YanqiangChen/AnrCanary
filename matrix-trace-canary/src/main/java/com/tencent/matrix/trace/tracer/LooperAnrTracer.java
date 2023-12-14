@@ -32,7 +32,6 @@ import com.tencent.matrix.trace.core.AppMethodBeat;
 import com.tencent.matrix.trace.core.LooperMonitor;
 import com.tencent.matrix.trace.items.MethodItem;
 import com.tencent.matrix.trace.listeners.ILooperListener;
-import com.tencent.matrix.trace.util.FileUtil;
 import com.tencent.matrix.trace.util.TraceDataUtils;
 import com.tencent.matrix.trace.util.Utils;
 import com.tencent.matrix.util.DeviceUtil;
@@ -180,7 +179,7 @@ public class LooperAnrTracer extends Tracer implements ILooperListener {
             String dumpStack;
             switch (traceConfig.getLooperPrinterStackStyle()) {
                 case TraceConfig.STACK_STYLE_WHOLE:
-                    dumpStack = Utils.getWholeStack(Looper.getMainLooper().getThread().getStackTrace());
+                    dumpStack = Utils.getWholeStack(Looper.getMainLooper().getThread().getStackTrace(), "|*\t\t");
                     break;
                 case TraceConfig.STACK_STYLE_RAW:
                     dumpStack = Utils.getMainThreadJavaStackTrace();
@@ -262,9 +261,6 @@ public class LooperAnrTracer extends Tracer implements ILooperListener {
                 issue.setTag(SharePluginInfo.TAG_PLUGIN_EVIL_METHOD);
                 issue.setContent(jsonObject);
                 plugin.onDetectIssue(issue);
-                String fileName = System.currentTimeMillis() + "LooperAnrTracerFile.txt";
-                FileUtil.saveToFile(jsonObject.toString(),"",fileName,Matrix.with().getApplication());  //写入到文件
-
 
             } catch (JSONException e) {
                 MatrixLog.e(TAG, "[JSONException error: %s", e);
@@ -330,6 +326,5 @@ public class LooperAnrTracer extends Tracer implements ILooperListener {
         memory[2] = DeviceUtil.getVmSize();
         return memory;
     }
-
 
 }

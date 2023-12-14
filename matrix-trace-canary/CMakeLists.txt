@@ -27,6 +27,7 @@ find_library( log-lib
               log )
 
 
+#EXT_DEP =  project.buildDir/intermediates/native_deps/extracted_native_dependencies
 target_link_libraries( trace-canary
         PRIVATE ${log-lib}
         PRIVATE ${EXT_DEP}/lib/${ANDROID_ABI}/libxhook.a

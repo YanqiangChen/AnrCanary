@@ -29,7 +29,7 @@ public class AnrApplication extends Application {
         Matrix.Builder builder = new Matrix.Builder(this);
         TraceConfig.Builder traceBuilder = new TraceConfig.Builder();
         traceBuilder.enableSignalAnrTrace(true);
-        traceBuilder.looperAnrTracer(true);
+//        traceBuilder.looperAnrTracer(true);
         traceBuilder.enableIdleHandlerTrace(true);
 //        traceBuilder.enableHistoryMsgRecorder(true);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

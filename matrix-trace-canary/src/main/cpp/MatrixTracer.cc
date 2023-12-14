@@ -70,7 +70,7 @@
 using namespace MatrixTracer;
 using namespace std;
 
-static std::optional<AnrDumper> sAnrDumper;   //
+static std::optional<AnrDumper> sAnrDumper;
 static bool isTraceWrite = false;
 static bool fromMyPrintTrace = false;
 static bool isHooking = false;
@@ -137,7 +137,7 @@ void writeAnr(const std::string& content, const std::string &filePath) {
 int (*original_connect)(int __fd, const struct sockaddr* __addr, socklen_t __addr_length);
 int my_connect(int __fd, const struct sockaddr* __addr, socklen_t __addr_length) {
     if (__addr!= nullptr) {
-        if (strcmp(__addr->sa_data, HOOK_CONNECT_PATH) == 0) {    //系统会先使用connet方法链接一个path为“/dev/socket/tombstoned_java_trace”的socket，我们可以hook connect方法，拿到这个socket的name
+        if (strcmp(__addr->sa_data, HOOK_CONNECT_PATH) == 0) {
             signalCatcherTid = gettid();
             isTraceWrite = true;
         }
@@ -149,7 +149,7 @@ int (*original_open)(const char *pathname, int flags, mode_t mode);
 
 int my_open(const char *pathname, int flags, mode_t mode) {
     if (pathname!= nullptr) {
-        if (strcmp(pathname, HOOK_OPEN_PATH) == 0) {   //判断 connect path /dev/socket/tombstoned_java_trace
+        if (strcmp(pathname, HOOK_OPEN_PATH) == 0) {
             signalCatcherTid = gettid();
             isTraceWrite = true;
         }
@@ -419,7 +419,7 @@ static void nativeInitSignalAnrDetective(JNIEnv *env, jclass, jstring anrTracePa
     const char* printTracePathChar = env->GetStringUTFChars(printTracePath, nullptr);
     anrTracePathString = std::string(anrTracePathChar);
     printTracePathString = std::string(printTracePathChar);
-    sAnrDumper.emplace(anrTracePathChar, printTracePathChar);  //构造对象
+    sAnrDumper.emplace(anrTracePathChar, printTracePathChar);
 }
 
 static void nativeFreeSignalAnrDetective(JNIEnv *env, jclass) {
@@ -472,7 +472,7 @@ static void nativeInitTouchEventLagDetective(JNIEnv *env, jclass, jint threshold
 
 }
 
-static void nativePrintTrace(JNIEnv *env, jclass clazz) {
+static void nativePrintTrace() {
     fromMyPrintTrace = true;
     kill(getpid(), SIGQUIT);
 }
